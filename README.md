@@ -204,3 +204,5 @@ column_headers = (
 | volume_api_version                          | 3                             |
 +---------------------------------------------+-------------------------------+
   ```
+해당 버그는 현재 gerrit에 올라와있는 모습을 볼 수 있다.<br>
+https://review.opendev.org/c/openstack/python-openstackclient/+/811005
