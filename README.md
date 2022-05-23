@@ -140,7 +140,7 @@ column_headers = (
   | volume_api_version                          | 3                             |  
   +---------------------------------------------+-------------------------------+  
   ```
-  출력화면을 보면 password가 secret이라고 적혀있는데 원래는 <redated>라고 마스킹되어 출력되어야 하는 항목이다.<br>
+  출력화면을 보면 password가 secret이라고 적혀있는데 원래는 `<redated>`라고 마스킹되어 출력되어야 하는 항목이다.<br>
   따라서 현재 프로그램의 마스킹하는 부분에 버그가 있어 제대로 역할을 수행하지 못하는 모습이다.<br>
   코드를 따라가면 python-openstackclient\setup.cfg파일의 42행~53행에서 configuration show가 openstackclient.common의 configuration을 호출하는 모습을 볼 수 있다.<br>
   ```
